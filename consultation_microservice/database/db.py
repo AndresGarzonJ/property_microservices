@@ -15,10 +15,10 @@ class MySqlConnection:
         # If not connected
         if not cls.connection or not cls.connection.is_connected():
             cls.connection = connector.connect(
-                user="andres",
-                password="123456",
-                host="127.0.0.1",
-                database="habi_db",
+                user="",
+                password="",
+                host="",
+                database="",
                 port=3306
             )
         return cls.connection
